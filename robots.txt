@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://to2002td-cpu.github.io/thomas-derrien.github.io/sitemap.xml
