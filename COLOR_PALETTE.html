@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Color Palette Guide - Resume Website</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Trebuchet MS, sans-serif;
+      background: #f8fafb;
+      padding: 40px 20px;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 50px;
+      color: #2c3e50;
+    }
+
+    .palette-section {
+      margin-bottom: 50px;
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .palette-section h2 {
+      color: #4a90a4;
+      margin-bottom: 25px;
+      font-size: 1.5rem;
+    }
+
+    .colors-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .color-box {
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .color-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    }
+
+    .color-sample {
+      height: 120px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: white;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .color-info {
+      background: white;
+      padding: 15px;
+    }
+
+    .color-name {
+      font-weight: 600;
+      color: #2c3e50;
+      margin-bottom: 5px;
+    }
+
+    .color-code {
+      font-family: 'Courier New', monospace;
+      color: #4a90a4;
+      font-size: 0.9rem;
+      background: #f0f0f0;
+      padding: 8px;
+      border-radius: 4px;
+    }
+
+    .usage {
+      margin-top: 10px;
+      font-size: 0.85rem;
+      color: #7f8c8d;
+      font-style: italic;
+    }
+
+    .combinations {
+      margin-top: 40px;
+      padding: 30px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .combinations h2 {
+      color: #4a90a4;
+      margin-bottom: 25px;
+    }
+
+    .combo {
+      display: flex;
+      gap: 15px;
+      align-items: center;
+      margin-bottom: 20px;
+      padding: 20px;
+      background: #f8fafb;
+      border-radius: 8px;
+    }
+
+    .combo-boxes {
+      display: flex;
+      gap: 10px;
+    }
+
+    .combo-box {
+      width: 60px;
+      height: 60px;
+      border-radius: 6px;
+    }
+
+    .combo-label {
+      flex: 1;
+    }
+
+    .combo-label strong {
+      color: #2c3e50;
+    }
+
+    .combo-label p {
+      font-size: 0.9rem;
+      color: #7f8c8d;
+      margin-top: 5px;
+    }
+
+    .tips {
+      margin-top: 40px;
+      padding: 30px;
+      background: linear-gradient(135deg, #e8f4f8 0%, #fce4ec 100%);
+      border-radius: 12px;
+      border-left: 4px solid #4a90a4;
+    }
+
+    .tips h2 {
+      color: #2c3e50;
+      margin-bottom: 15px;
+    }
+
+    .tips ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .tips li {
+      padding: 8px 0;
+      color: #2c3e50;
+    }
+
+    .tips li::before {
+      content: "✨ ";
+      color: #c2739f;
+      margin-right: 10px;
+    }
+
+    code {
+      background: #f0f0f0;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-family: 'Courier New', monospace;
+      color: #c2739f;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🎨 Resume Website - Color Palette Guide</h1>
+
+    <!-- Primary Colors -->
+    <div class="palette-section">
+      <h2>Primary Colors</h2>
+      <div class="colors-grid">
+        <div class="color-box">
+          <div class="color-sample" style="background-color: #e8f4f8;">Light</div>
+          <div class="color-info">
+            <div class="color-name">Light Blue</div>
+            <div class="color-code">#e8f4f8</div>
+            <div class="usage">Used for soft backgrounds and light accents</div>
+          </div>
+        </div>
+
+        <div class="color-box">
+          <div class="color-sample" style="background-color: #4a90a4;">Main</div>
+          <div class="color-info">
+            <div class="color-name">Primary Blue</div>
+            <div class="color-code">#4a90a4</div>
+            <div class="usage">Main accent color for headings and buttons</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Secondary Colors -->
+    <div class="palette-section">
+      <h2>Secondary Colors</h2>
+      <div class="colors-grid">
+        <div class="color-box">
+          <div class="color-sample" style="background-color: #fce4ec;">Light</div>
+          <div class="color-info">
+            <div class="color-name">Pale Pink</div>
+            <div class="color-code">#fce4ec</div>
+            <div class="usage">Subtle secondary background accent</div>
+          </div>
+        </div>
+
+        <div class="color-box">
+          <div class="color-sample" style="background-color: #c2739f;">Main</div>
+          <div class="color-info">
+            <div class="color-name">Secondary Pink</div>
+            <div class="color-code">#c2739f</div>
+            <div class="usage">Secondary accent for emphasis and highlights</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Accent Colors -->
+    <div class="palette-section">
+      <h2>Accent Colors</h2>
+      <div class="colors-grid">
+        <div class="color-box">
+          <div class="color-sample" style="background-color: #a8d8d8;">Fresh</div>
+          <div class="color-info">
+            <div class="color-name">Mint</div>
+            <div class="color-code">#a8d8d8</div>
+            <div class="usage">Fresh accent for hover states and borders</div>
+          </div>
+        </div>
+
+        <div class="color-box">
+          <div class="color-sample" style="background-color: #d9c9e5;">Elegant</div>
+          <div class="color-info">
+            <div class="color-name">Lavender</div>
+            <div class="color-code">#d9c9e5</div>
+            <div class="usage">Elegant accent for subtle design elements</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Neutral Colors -->
+    <div class="palette-section">
+      <h2>Neutral Colors</h2>
+      <div class="colors-grid">
+        <div class="color-box">
+          <div class="color-sample" style="background-color: #2c3e50; color: #fff;">Dark</div>
+          <div class="color-info">
+            <div class="color-name">Text Dark</div>
+            <div class="color-code">#2c3e50</div>
+            <div class="usage">Primary text color for readability</div>
+          </div>
+        </div>
+
+        <div class="color-box">
+          <div class="color-sample" style="background-color: #7f8c8d; color: #fff;">Light</div>
+          <div class="color-info">
+            <div class="color-name">Text Light</div>
+            <div class="color-code">#7f8c8d</div>
+            <div class="usage">Secondary text for descriptions</div>
+          </div>
+        </div>
+
+        <div class="color-box">
+          <div class="color-sample" style="background-color: #f8fafb; border: 1px solid #ddd;">Background</div>
+          <div class="color-info">
+            <div class="color-name">Light Background</div>
+            <div class="color-code">#f8fafb</div>
+            <div class="usage">Light backgrounds and subtle backgrounds</div>
+          </div>
+        </div>
+
+        <div class="color-box">
+          <div class="color-sample" style="background-color: #e0e6e8; color: #666;">Border</div>
+          <div class="color-info">
+            <div class="color-name">Border Light</div>
+            <div class="color-code">#e0e6e8</div>
+            <div class="usage">Subtle borders and dividers</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Color Combinations -->
+    <div class="combinations">
+      <h2>Color Combinations & Usage</h2>
+
+      <div class="combo">
+        <div class="combo-boxes">
+          <div class="combo-box" style="background: #e8f4f8;"></div>
+          <div class="combo-box" style="background: #4a90a4;"></div>
+        </div>
+        <div class="combo-label">
+          <strong>Primary Combination</strong>
+          <p>Light Blue + Primary Blue - Used for main sections and CTA buttons</p>
+        </div>
+      </div>
+
+      <div class="combo">
+        <div class="combo-boxes">
+          <div class="combo-box" style="background: #4a90a4;"></div>
+          <div class="combo-box" style="background: #c2739f;"></div>
+        </div>
+        <div class="combo-label">
+          <strong>Gradient Primary</strong>
+          <p>Used for headings, gradients, and major visual elements</p>
+        </div>
+      </div>
+
+      <div class="combo">
+        <div class="combo-boxes">
+          <div class="combo-box" style="background: #fce4ec;"></div>
+          <div class="combo-box" style="background: #c2739f;"></div>
+        </div>
+        <div class="combo-label">
+          <strong>Pink Combination</strong>
+          <p>Pale Pink + Secondary Pink - Used for tags and date badges</p>
+        </div>
+      </div>
+
+      <div class="combo">
+        <div class="combo-boxes">
+          <div class="combo-box" style="background: #a8d8d8;"></div>
+          <div class="combo-box" style="background: #d9c9e5;"></div>
+        </div>
+        <div class="combo-label">
+          <strong>Accent Combination</strong>
+          <p>Mint + Lavender - Used for subtle accents and decorative elements</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tips -->
+    <div class="tips">
+      <h2>💡 Design Tips</h2>
+      <ul>
+        <li>Use <code>--primary-blue</code> for main interactive elements and headings</li>
+        <li>Apply <code>linear-gradient(135deg, var(--primary-blue), var(--secondary-pink))</code> for elegant gradients</li>
+        <li>Use <code>--primary-light-blue</code> for hover states to provide feedback</li>
+        <li>Keep <code>#2c3e50</code> for body text for excellent readability</li>
+        <li>Pair <code>--accent-mint</code> with <code>--primary-blue</code> for fresh accents</li>
+        <li>Use pale pink tags (<code>--secondary-pale-pink</code>) for subtle categorization</li>
+        <li>Avoid pure white backgrounds; use <code>--bg-light</code> (#f8fafb) for softer appearance</li>
+        <li>Test color contrast for accessibility (WCAG AA standard)</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>

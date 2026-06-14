@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#34527c" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#11151c" media="(prefers-color-scheme: dark)">
+  <meta name="description" content="Thomas Derrien — PhD student in computer science at Archimedia, IRISA.">
+  <meta property="og:title" content="Thomas Derrien">
+  <meta property="og:description" content="PhD student in Computer Science at IRISA. Research on multimodal entity linking, retrieval, and efficient representation learning.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/ProfilePic.jpeg">
+  <title>Thomas Derrien</title>
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;0,700;1,400;1,500&family=Source+Sans+3:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>
+    (function(){
+      var s=localStorage.getItem('theme'),d=window.matchMedia('(prefers-color-scheme:dark)').matches;
+      document.documentElement.dataset.theme=s||(d?'dark':'light');
+    })();
+  </script>
+</head>
+<body>
+
+  <div class="page">
+
+    <!-- ═══ SIDEBAR ═══ -->
+    <aside class="sidebar">
+      <div class="profile">
+        <div class="profile-header">
+        <!-- <div class="photo-frame">
+          <img src="assets/images/ProfilePic.jpeg" alt="Thomas Derrien" class="photo-img" loading="eager" decoding="async" onerror="this.style.display='none'">
+        </div> -->
+          <div class="profile-heading">
+            <h1 class="profile-name">Thomas Derrien</h1>
+            <p class="profile-role">PhD Student<br>Computer Science</p>
+          </div>
+        </div>
+        <p class="profile-affil">
+          <a href="https://www-archimedia.irisa.fr" target="_blank" rel="noopener">Archimedia, IRISA</a><br>
+          <a href="https://www.irisa.fr" target="_blank" rel="noopener">Univ. Rennes, INSA Rennes, CNRS, Inria, IRISA &ndash; UMR 6074</a>
+        </p>
+        <p class="profile-tagline"> Research on multimodal entity linking, retrieval, and multimodal representation learning.</p>
+      
+      </div>
+
+      <nav class="side-nav">
+        <ul>
+          <li><a href="#about"><span>About</span></a></li>
+          <li><a href="#news"><span>News</span></a></li>
+          <li><a href="#research"><span>Research</span></a></li>
+          <li><a href="#publications"><span>Publications</span></a></li>
+          <li><a href="#cv"><span>CV</span></a></li>
+          <li><a href="#contact"><span>Contact</span></a></li>
+        </ul>
+      </nav>
+
+      <div class="side-links">
+        <a href="mailto:thomas.derrien@irisa.fr">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M3 6.75A1.75 1.75 0 0 1 4.75 5h14.5A1.75 1.75 0 0 1 21 6.75v10.5A1.75 1.75 0 0 1 19.25 19H4.75A1.75 1.75 0 0 1 3 17.25V6.75Zm1.8.05 7.2 5.63 7.2-5.63a.25.25 0 0 0-.2-.05H5a.25.25 0 0 0-.2.05Zm14.45 10.45a.25.25 0 0 0 .25-.25V8.58l-6.89 5.39a1 1 0 0 1-1.22 0L4.5 8.58V17a.25.25 0 0 0 .25.25h14.5Z"/>
+          </svg>
+          <span>Email</span>
+        </a>
+        <a href="https://scholar.google.com/citations?user=Uqv13wMAAAAJ&hl=en" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 3 1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9L12 3Zm6.82 6L12 12.72 5.18 9 12 5.28 18.82 9ZM17 15.99l-5 2.73-5-2.73v-3.72L12 15l5-2.73v3.72Z"/>
+          </svg>
+          <span>Google Scholar</span>
+        </a>
+        <a href="https://github.com/to2002td-cpu" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 .5C5.65.5.5 5.66.5 12.03c0 5.1 3.3 9.42 7.88 10.95.58.11.79-.25.79-.56 0-.27-.01-1.17-.02-2.12-3.21.7-3.89-1.37-3.89-1.37-.52-1.34-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.78 1.2 1.78 1.2 1.03 1.77 2.71 1.26 3.37.97.1-.75.4-1.26.73-1.55-2.56-.29-5.25-1.29-5.25-5.72 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.06 11.06 0 0 1 5.8 0c2.21-1.49 3.18-1.18 3.18-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.44-2.69 5.43-5.26 5.71.41.36.78 1.06.78 2.14 0 1.54-.01 2.79-.01 3.17 0 .31.21.68.8.56A11.54 11.54 0 0 0 23.5 12.03C23.5 5.66 18.35.5 12 .5Z"/>
+          </svg>
+          <span>GitHub</span>
+        </a>
+        <a href="https://huggingface.co/Thomas-DERRIEN" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <rect x="2.5" y="2.5" width="19" height="19" rx="6"/>
+            <path d="M8 7.5h2v3h4v-3h2v9h-2v-4h-4v4H8v-9Z" fill="#fff"/>
+            <path d="M17.5 8.5h1.25a1.25 1.25 0 0 1 0 2.5H17.5v-2.5Z" fill="#fff"/>
+          </svg>
+          <span>Hugging Face</span>
+        </a>
+      </div>
+
+      <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+        </svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="4"/>
+          <path d="M12 2v2m0 16v2M4.22 4.22l1.42 1.42m12.72 12.72 1.42 1.42M2 12h2m16 0h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+        </svg>
+        <span>Toggle theme</span>
+      </button>
+    </aside>
+
+    <!-- ═══ CONTENT ═══ -->
+    <main class="content">
+
+      <section id="about">
+        <h2>About</h2>
+        <p class="lead">
+          I am a PhD student in the Archimedia team at IRISA, supervised by Laurent Amsaleg and Pascale Sébillot.
+          My research focuses on multimodal entity linking, with a particular interest in multimodal representation learning,
+          retrieval, and efficient searching methods.
+        </p>
+      </section>
+
+      <section id="news">
+        <h2>News</h2>
+        <ul class="news-list reveal-group">
+          <li class="news-item reveal-item">
+            <span class="news-date">2026.04</span>
+            <span class="news-text">Our paper <strong>FAST-MEL</strong> was accepted to the <strong>ACM SIGIR 2026</strong> short paper track.</span>
+          </li>
+          <li class="news-item reveal-item">
+            <span class="news-date">2025.10</span>
+            <span class="news-text">Started my PhD at IRISA in the Archimedia team.</span>
+          </li>
+        </ul>
+      </section>
+
+      <section id="research">
+        <h2>Research</h2>
+        <p>
+          My research focuses on methods for linking named entities in ambiguous multimodal corpora.
+          In multimodal entity linking, the objective is to map a mention in unstructured data to its corresponding entity in a knowledge base by leveraging both textual and visual information.
+          Although combining modalities introduces additional complexity, it also provides complementary signals that can resolve ambiguities left open by text alone.
+        </p>
+        <p>
+          I am particularly interested in retrieval-oriented representations that make this process accurate, scalable, and efficient.
+          Multimodal embeddings and vision-language models are powerful tools for this task, but they often come with significant computational costs.
+          Developing methods that efficiently index and retrieve relevant entities while maintaining strong performance is a central focus of my work.
+        </p>
+        <div class="interest-tags reveal-group">
+          <span class="itag reveal-item">Multimodal Embeddings</span>
+          <span class="itag reveal-item">Multimodal Entity Linking</span>
+          <span class="itag reveal-item">Multimodal Retrieval</span>
+          <span class="itag reveal-item">Vision-Language Models</span>
+          <span class="itag reveal-item">Representation Learning</span>
+        </div>
+      </section>
+
+      <section id="publications">
+        <h2>Publications</h2>
+        <p class="text-muted">Selected publications.</p>
+
+        <div class="pub-list reveal-group">
+          <p class="pub-year reveal-item">2026</p>
+
+          <article class="publication reveal-item">
+            <a class="pub-thumb" href="https://arxiv.org/abs/2606.11749" aria-label="Open FAST-MEL on arXiv" target="_blank" rel="noopener">
+              <img class="pub-thumb-image" src="assets/publis/fast_mel_preview.png" alt="FAST-MEL paper preview" loading="lazy" decoding="async">
+            </a>
+            <div class="pub-body">
+              <h3 class="pub-title"><a href="https://arxiv.org/abs/2606.11749" target="_blank" rel="noopener">FAST-MEL: A Fast, Accurate, and Storage Efficient Solution for Multimodal Entity Linking</a></h3>
+              <p class="pub-authors"><strong>Thomas Derrien</strong>, Laurent Amsaleg, Pascale Sébillot</p>
+              <p class="pub-venue">ACM SIGIR 2026 &middot; Short Paper</p>
+              <p class="pub-summary">
+                An encoder-based approach to multimodal entity linking that represents text and image mentions as compact fixed-size vectors. FAST-MEL matches the linking accuracy of state-of-the-art systems while running orders of magnitude faster and requiring an order of magnitude less storage.
+              </p>
+              <p class="pub-links">
+                <a href="https://arxiv.org/abs/2606.11749" target="_blank" rel="noopener">arXiv</a> &middot; <a href="https://arxiv.org/pdf/2606.11749" target="_blank" rel="noopener">PDF</a> &middot; <a href="assets/publis/fast_mel.bib" download>BibTeX</a> &middot; <a href="https://github.com/to2002td-cpu/FASTMEL" target="_blank" rel="noopener">Code</a>
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="cv">
+        <h2>CV</h2>
+
+        <h3>Education</h3>
+        <div class="cv-list reveal-group">
+          <div class="cv-item reveal-item">
+            <div class="cv-date">2025 &ndash; Present</div>
+            <div class="cv-content">
+              <div class="cv-role-row">
+                <span class="cv-role">PhD in Computer Science</span>
+                <span class="cv-org"> - Archimedia, IRISA</span>
+              </div>
+              <div class="cv-subline">University of Rennes, France</div>
+              <div class="cv-detail">Supervisors: Laurent Amsaleg, Pascale Sebillot</div>
+            </div>
+          </div>
+          <div class="cv-item reveal-item">
+            <div class="cv-date">2022 &ndash; 2025</div>
+            <div class="cv-content">
+              <div class="cv-role-row">
+                <span class="cv-role">Engineering Degree / MSc</span>
+                <span class="cv-org"> - INSA Rennes</span>
+              </div>
+              <div class="cv-subline">Rennes, France</div>
+              <div class="cv-detail">Specialization: Computer Science and Data Science</div>
+            </div>
+          </div>
+          <div class="cv-item reveal-item">
+            <div class="cv-date">2020 &ndash; 2022</div>
+            <div class="cv-content">
+              <div class="cv-role-row">
+                <span class="cv-role">Bachelor of Science in Mathematics</span>
+                <span class="cv-org"> - University of Rennes</span>
+              </div>
+              <div class="cv-subline">Rennes, France</div>
+            </div>
+          </div>
+        </div>
+
+        <h3>Experience</h3>
+        <div class="cv-list reveal-group">
+          <div class="cv-item reveal-item">
+            <div class="cv-date">Oct 2025 &ndash; Present</div>
+            <div class="cv-content">
+              <div class="cv-role-row">
+                <span class="cv-role">PhD Student</span>
+                <span class="cv-org"> - Archimedia, IRISA</span>
+              </div>
+              <div class="cv-subline">Rennes, France</div>
+              <div class="cv-detail">Research on multimodal entity linking, multimodal retrieval, and efficient representation learning.</div>
+            </div>
+          </div>
+          <div class="cv-item reveal-item">
+            <div class="cv-date">Feb &ndash; Aug 2025</div>
+            <div class="cv-content">
+              <div class="cv-role-row">
+                <span class="cv-role">Research Intern</span>
+                <span class="cv-org"> - Archimedia, IRISA</span>
+              </div>
+              <div class="cv-subline">Rennes, France</div>
+              <div class="cv-detail">Research on multimodal entity linking.</div>
+            </div>
+          </div>
+          <div class="cv-item reveal-item">
+            <div class="cv-date">Summer 2024</div>
+            <div class="cv-content">
+              <div class="cv-role-row">
+                <span class="cv-role">Systems Engineer Intern</span>
+                <span class="cv-org"> - French Ministry of the Interior</span>
+              </div>
+              <div class="cv-subline">Rennes, France</div>
+              <div class="cv-detail">Worked on infrastructure and deployment workflows using GitLab CI/CD, Docker, and Ansible.</div>
+            </div>
+          </div>
+          <div class="cv-item reveal-item">
+            <div class="cv-date">Summer 2023</div>
+            <div class="cv-content">
+              <div class="cv-role-row">
+                <span class="cv-role">Data Scientist Intern</span>
+                <span class="cv-org"> - INCI, CNRS</span>
+              </div>
+              <div class="cv-subline">Strasbourg, France</div>
+              <div class="cv-detail">Contributed to neuroscience data analysis and processing for research on mesolimbic dopaminergic pathway alterations in a murine model of depression induced by chronic pain. Work can be found in this <a href="https://theses.hal.science/tel-04892874" target="_blank" rel="noopener">thesis</a>.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>I am always happy to discuss research, collaborations, and related opportunities.</p>
+        <dl class="contact-list">
+          <div class="contact-row">
+            <dt>Email</dt>
+            <dd><a href="mailto:thomas.derrien@irisa.fr">thomas.derrien@irisa.fr</a></dd>
+          </div>
+          <div class="contact-row">
+            <dt>Scholar</dt>
+            <dd><a href="https://scholar.google.com/citations?user=Uqv13wMAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar profile</a></dd>
+          </div>
+          <div class="contact-row">
+            <dt>Location</dt>
+            <dd>IRISA &middot; Campus de Beaulieu &middot; Rennes, France</dd>
+          </div>
+        </dl>
+      </section>
+
+      <footer>
+        <p>&copy; 2026 Thomas Derrien &middot; Last updated May 2026</p>
+      </footer>
+
+    </main>
+
+  </div>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
