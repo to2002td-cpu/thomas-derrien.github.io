@@ -656,7 +656,7 @@ section:last-of-type { padding-bottom: var(--space-8); }
   position: absolute;
   top: 0;
   bottom: 0;
-  left: calc(var(--space-3) + 7.5rem + var(--space-6) / 2 - 1px);
+  left: calc(7.5rem + var(--space-6) / 2 - 1px);
   width: 2px;
   background: var(--border);
 }
@@ -682,7 +682,7 @@ section:last-of-type { padding-bottom: var(--space-8); }
   content: '';
   position: absolute;
   top: calc(var(--space-4) + 0.3rem);
-  left: calc(var(--space-3) + 7.5rem + var(--space-6) / 2 - 3px);
+  left: calc(7.5rem + var(--space-6) / 2 - 3px);
   width: 7px;
   height: 7px;
   border-radius: 50%;
